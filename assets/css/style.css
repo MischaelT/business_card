@@ -766,6 +766,7 @@ section {
   text-align: center;
 }
 
+
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
@@ -796,6 +797,13 @@ section {
   overflow: hidden;
   z-index: 1;
   background: rgba(21, 21, 21, 0.9); /* Dark background color */
+}
+
+.portfolio-item .portfolio-wrap .portfolio-icon {
+  max-width: 200px; /* Adjust the maximum width as needed */
+  width: 100%; /* Ensures the image fits within its container */
+  height: auto; /* Allows the height to adjust while maintaining aspect ratio */
+  /* Other styles if needed */
 }
 
 .portfolio .portfolio-wrap::before {
