@@ -800,11 +800,21 @@ section {
 }
 
 .portfolio-item .portfolio-wrap .portfolio-icon {
-  max-width: 200px; /* Adjust the maximum width as needed */
-  width: 100%; /* Ensures the image fits within its container */
-  height: auto; /* Allows the height to adjust while maintaining aspect ratio */
-  /* Other styles if needed */
+  max-width: 60%; /* Adjust the maximum width as needed */
+  width: 40vh; /* Adjust the width as needed */
+  height: 50vh; /* Adjust the height as needed */
+  display: block;
+  margin: 0 auto;
+  object-fit: contain; /* Maintain aspect ratio and fit the entire image */
+  transition: transform 0.3s; /* Added a transition for a smoother effect */
 }
+
+.portfolio .portfolio-wrap:hover .portfolio-icon {
+  transform: scale(1.2);
+}
+
+
+
 
 .portfolio .portfolio-wrap::before {
   content: "";
@@ -1380,7 +1390,7 @@ section {
   padding: 2px 0 2px 0;
   line-height: 1;
   font-weight: 700;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 #footer .footer-top .footer-info h3 span {
