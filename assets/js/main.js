@@ -41,6 +41,66 @@
     el.addEventListener('scroll', listener)
   }
 
+//   var data = {
+//     labels: [2017, 2019, 2021, 2023, 2025, 2027, 2029, 2031],
+//     datasets: [{
+//         label: 'My Data',
+//         borderColor: 'white',
+//         backgroundColor: 'rgba(152, 93, 255, 0.5)',
+//         data: [1, 2, 5, 9, 15, 22, 36, 50],
+//         fill: true,
+//     }]
+// };
+
+// var ctx = document.getElementById('myChart').getContext('2d');
+// var myChart = new Chart(ctx, {
+//     type: 'line',
+//     data: data,
+//     options: {
+//         animation: {
+//             duration: 1000,
+//         },
+//         scales: {
+//             x: {
+//                 type: 'linear',
+//                 position: 'bottom',
+//             },
+//             y: {
+//                 min: 0,
+//             }
+//         },
+//         legend: {
+//             display: false
+//         }
+//     }
+// });
+
+// var newData = [1, 2, 5, 9, 15, 22, 36, 50];
+// var startTime = performance.now();
+
+// function animateChart(timestamp) {
+//     if (timestamp - startTime < myChart.options.animation.duration) {
+//         var progress = (timestamp - startTime) / myChart.options.animation.duration;
+//         var translateY = easeInOutQuadratic(progress);
+
+//         for (var i = 0; i < data.datasets[0].data.length; i++) {
+//             data.datasets[0].data[i] = newData[i] * translateY;
+//         }
+
+//         myChart.update();
+//         requestAnimationFrame(animateChart);
+//     } else {
+//         startTime = timestamp;
+//     }
+// }
+
+// function easeInOutQuadratic(t) {
+//     return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+// }
+
+// // Start the animation
+// animateChart(performance.now());
+  
   /**
    * Navbar links active state on scroll
    */
